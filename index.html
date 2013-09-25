@@ -1,0 +1,72 @@
+<! DOCTYPE html>
+<html>
+<body>
+<!-- This is the form -->
+<form name = "myform">
+<h2 style="color: blue; text-align: center">Send us an email!</h2>
+<pre style="color: red; font-size: 20px">
+
+First Name:<input type="text" name="firstname" />
+
+Last Name: <input type="text" name="lastname" />
+
+E-mail:	   <input type="text" name="email" />
+
+Message:   
+<textarea rows="4" cols="50"></textarea>
+
+<input type="button" value="Submit" />
+</pre>
+
+</form>
+
+<!-- This is the script -->
+<script>
+	<!-- Declaring variables -->
+		var stringtype = "mystring", 
+			testnumber = 10,
+			bool = true,
+			stringtest = "true",
+			numbertype = 10;
+			
+		<!-- Counting to 10 -->
+		for (var i = 0; i < 10; i++) 
+		{
+			console.log(i);
+		}
+		
+		<!-- Counting down from 10 -->
+		for (var x = 10; x > 0; x--)
+		{
+			console.log(x);
+		}
+		
+		<!-- Testing to see if "testnumber is equal to "numbertype"...it should be. -->
+		if (testnumber === numbertype)
+		{
+			console.log("they are exactly the same");
+		} else if (testnumber == numbertype) {
+			console.log("they are not exactly the same");
+		}
+		
+		<!-- Testing to see if "bool" is equal to "stringtest"...it shouldn't be. -->
+		if (bool == stringtest)
+		{
+			console.log("these two are the same");
+		}
+		else{
+			console.log("they are not the same");
+			}
+			
+		
+		<!-- Testing logging -->
+		console.log("before");
+		console.log(stringtype);
+		
+		stringtype = stringtype + " more string";
+		
+		console.log("after");
+		console.log(stringtype);
+		
+</script>
+</body>
